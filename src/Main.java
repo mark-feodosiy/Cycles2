@@ -11,6 +11,7 @@ public class Main {
                     System.out.println("Месяц " + month + ", сумма накоплений равна " + depositTotal + " рублей");
             }
         }
+        System.out.println();
         {
             // Задача № 2
             int i = 11;
@@ -22,7 +23,20 @@ public class Main {
             for (int n = 1; n <= 10; n++) {
                 System.out.print(n + " ");
             }
-            System.out.println();
+        }
+        System.out.println();
+        {
+            // Задача № 3
+            int year = 1;
+            int population = 12_000_000;
+            int deathNumber = population * year / 1000 * 8;
+            int birthNumber = population * year / 1000 * 17;
+            while (year <= 10) {
+                population = population + birthNumber - deathNumber;
+                System.out.println("Год " + year + " , численность населения составляет " + population);
+                year ++;
+            }
+
         }
     }
 
