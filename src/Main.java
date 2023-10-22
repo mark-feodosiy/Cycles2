@@ -25,6 +25,7 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
         {
             // Задача № 3
             int year = 1;
@@ -33,10 +34,20 @@ public class Main {
             int birthNumber = population * year / 1000 * 17;
             while (year <= 10) {
                 population = population + birthNumber - deathNumber;
-                System.out.println("Год " + year + " , численность населения составляет " + population);
+                System.out.println("Год " + year + ", численность населения составляет " + population);
                 year ++;
             }
-
+        }
+        System.out.println();
+        {
+            // Задача № 4
+            int depositTotal = 15000;
+            int month = 0;
+            while (depositTotal <= 12_000_000) {
+                depositTotal = depositTotal + depositTotal / 100 * 7;
+                month = month + 1;
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + depositTotal + " рублей");
+            }
         }
     }
 
