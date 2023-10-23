@@ -49,6 +49,20 @@ public class Main {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + depositTotal + " рублей");
             }
         }
+        System.out.println();
+        {
+            // Задача № 5
+            int depositTotal = 15000;
+            int month = 0;
+            //int sixMonth = 1;
+            while (depositTotal <= 12_000_000) {
+                depositTotal = depositTotal + depositTotal / 100 * 7;
+                month = month + 1;
+                if (month % 6 == 0) {
+                    System.out.println("Месяц " + month + ", сумма накоплений равна " + depositTotal + " рублей");
+                }
+            }
+        }
     }
 
 }
