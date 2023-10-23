@@ -87,8 +87,17 @@ public class Main {
                     System.out.println("День " + day);
                    } else {
                     System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
-                    }
-
+                   }
+            }
+        }
+        System.out.println();
+        {
+            // Задача № 8
+            int currentYear = 2018;
+            for (int i = 0; i <= currentYear + 100; i = i + 79) {
+              if ((i >= currentYear - 200) && i <= (currentYear + 100)) {
+                    System.out.println("годы " + i);
+                }
             }
         }
     }
