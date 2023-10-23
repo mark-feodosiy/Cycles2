@@ -63,6 +63,33 @@ public class Main {
                 }
             }
         }
-    }
+        System.out.println();
+        {
+            // Задача № 6
+            int depositTotal = 15000;
+            int month = 0;
+            while (month <= 108) {
+                depositTotal = depositTotal + depositTotal / 100 * 7;
+                month = month + 1;
+                if (month % 18 == 0) {
+                    System.out.println("Месяц " + month + ", сумма накоплений равна " + depositTotal + " рублей");
+                }
+            }
+        }
+        System.out.println();
+        {
+            // Задача № 7
+            int firstFriday = 3;
+            int day = 0;
+            while (day < 31) {
+                day = day + 1;
+                if ((day != firstFriday) && ((day - firstFriday) % 7 != 0)) {
+                    System.out.println("День " + day);
+                   } else {
+                    System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+                    }
 
+            }
+        }
+    }
 }
