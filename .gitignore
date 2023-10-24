@@ -27,3 +27,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/Cicles2.iml
+/.idea/
